@@ -1,4 +1,7 @@
-﻿using Microsoft.Xna.Framework;
+﻿// Z Engine is owned by Snowman64 under the GNU General Public License v3.0.
+// You are allowed to use this engine for free, credit must be given.
+
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;

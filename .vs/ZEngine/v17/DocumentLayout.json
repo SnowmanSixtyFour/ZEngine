@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\ZEngine\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\source\\repos\\zengine\\zengine\\maingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\documents\\github\\zengine\\zengine\\maingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|solutionrelative:zengine\\maingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\source\\repos\\zengine\\zengine\\source\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\documents\\github\\zengine\\zengine\\source\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|solutionrelative:zengine\\source\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainGame.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ZEngine\\ZEngine\\MainGame.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\MainGame.cs",
               "RelativeDocumentMoniker": "ZEngine\\MainGame.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ZEngine\\ZEngine\\MainGame.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\MainGame.cs",
               "RelativeToolTip": "ZEngine\\MainGame.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAwCIAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwCEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T00:08:55.471Z",
               "EditorCaption": ""
@@ -37,14 +37,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "GlobalVariables.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\ZEngine\\ZEngine\\Source\\GlobalVariables.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\Source\\GlobalVariables.cs",
               "RelativeDocumentMoniker": "ZEngine\\Source\\GlobalVariables.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\ZEngine\\ZEngine\\Source\\GlobalVariables.cs",
+              "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\Source\\GlobalVariables.cs",
               "RelativeToolTip": "ZEngine\\Source\\GlobalVariables.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T00:07:48.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T00:07:48.963Z"
             }
           ]
         }
