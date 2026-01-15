@@ -5,7 +5,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using System.Runtime.CompilerServices;
 using ZEngine.Source;
+using ZEngine.Source.States;
 
 namespace ZEngine
 {
@@ -13,6 +15,11 @@ namespace ZEngine
     {
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
+
+        public static GraphicsDeviceManager publicGraphics;
+        public static GraphicsDevice publicGraphicsDevice;
+
+        private Main game;
 
         public MainGame()
         {
@@ -23,8 +30,12 @@ namespace ZEngine
 
         protected override void Initialize()
         {
-            this.Window.Title = Global.windowName;
+            // Initialize variables
+            publicGraphics = this.graphics;
+            publicGraphicsDevice = this.GraphicsDevice;
 
+            // Set window
+            this.Window.Title = Global.windowName;
             ChangeWindowSize(Global.windowWidth, Global.windowHeight);
 
             base.Initialize();
@@ -42,24 +53,28 @@ namespace ZEngine
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            game = new Main();
         }
 
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-
-            // TODO: Add your update logic here
+            
+            // Update game
+            game.Update(gameTime);
 
             base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            spriteBatch.Begin();
 
-            // TODO: Add your drawing code here
+            // Draw game
+            game.Draw(spriteBatch);
+            
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
