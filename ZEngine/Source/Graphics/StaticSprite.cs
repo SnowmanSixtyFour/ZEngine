@@ -1,10 +1,10 @@
-﻿using Microsoft.Xna.Framework.Graphics;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace ZEngine.Source.Graphics
 {
@@ -16,6 +16,9 @@ namespace ZEngine.Source.Graphics
 
         public StaticSprite(Texture2D texture, Rectangle rect, Color color)
         {
+            // Error check
+            if (texture == null) texture = Global.noImg;
+
             // Initialize sprite
             setTexture(texture);
             setRect(rect);

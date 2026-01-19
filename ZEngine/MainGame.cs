@@ -1,13 +1,13 @@
 ﻿// Z Engine is owned by Snowman64 under the GNU General Public License v3.0.
 // You are allowed to use this engine for free, credit must be given.
 
+using System;
+using System.Runtime.CompilerServices;
+using ZEngine.Source.States;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
-using System.Runtime.CompilerServices;
 using ZEngine.Source;
-using ZEngine.Source.States;
 
 namespace ZEngine
 {
@@ -52,6 +52,8 @@ namespace ZEngine
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            Global.LoadContent(Content);
 
             game = new Main();
         }
