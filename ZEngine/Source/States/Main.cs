@@ -15,14 +15,18 @@ namespace ZEngine.Source.States
     internal class Main : State
     {
         Character giovanni;
+        public Camera cam;
 
         public Main()
         {
             giovanni = new Character(Global.gio, new Point(10, 10), new Point(48, 29), new Point(16, 29), Color.White);
+            cam = new Camera(this.graphicsDevice.Viewport);
         }
 
         public override void Update(GameTime gameTime)
         {
+            cam.Update(gameTime, giovanni);
+
             base.Update(gameTime);
         }
 

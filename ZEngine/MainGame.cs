@@ -74,7 +74,12 @@ namespace ZEngine
 
         protected override void Draw(GameTime gameTime)
         {
-            spriteBatch.Begin();
+            GraphicsDevice.Clear(Color.Black);
+
+            spriteBatch.Begin(SpriteSortMode.Deferred,
+                BlendState.AlphaBlend,
+                null, null, null, null,
+                game.cam.transform);
 
             // Draw game
             game.Draw(spriteBatch);
