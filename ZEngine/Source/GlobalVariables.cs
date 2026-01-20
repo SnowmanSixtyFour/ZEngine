@@ -22,12 +22,14 @@ namespace ZEngine.Source
 
         // Sprites
 
-        public static Texture2D noImg;
+        public static Texture2D noImg, gio;
 
         // Load game assets
         public static void LoadContent(ContentManager content)
         {
             Global.noImg = content.Load<Texture2D>("Assets/Images/pixel");
+
+            Global.gio = content.Load<Texture2D>("Assets/Images/Giovanni");
         }
     }
 }

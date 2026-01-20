@@ -11,7 +11,7 @@ namespace ZEngine.Source.Graphics
     internal class StaticSprite
     {
         private Texture2D texture;
-        private Rectangle rect;
+        private Rectangle destRect;
         private Color color;
 
         public StaticSprite(Texture2D texture, Rectangle rect, Color color)
@@ -21,20 +21,25 @@ namespace ZEngine.Source.Graphics
 
             // Initialize sprite
             setTexture(texture);
-            setRect(rect);
+            setDestRect(rect);
             setColor(color);
+        }
+
+        public void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(texture, destRect, color);
         }
 
         // Getters
 
-        public Texture2D getSprite()
+        public Texture2D getTexture()
         {
             return this.texture;
         }
 
-        public Rectangle getRect()
+        public Rectangle getDestRect()
         {
-            return this.rect;
+            return this.destRect;
         }
 
         public Color getColor()
@@ -49,9 +54,9 @@ namespace ZEngine.Source.Graphics
             this.texture = newTexture;
         }
 
-        public void setRect(Rectangle newRect)
+        public void setDestRect(Rectangle newRect)
         {
-            this.rect = newRect;
+            this.destRect = newRect;
         }
 
         public void setColor(Color newColor)

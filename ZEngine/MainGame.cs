@@ -37,6 +37,7 @@ namespace ZEngine
             // Set window
             this.Window.Title = Global.windowName;
             ChangeWindowSize(Global.windowWidth, Global.windowHeight);
+            this.Window.AllowUserResizing = true;
 
             base.Initialize();
         }
@@ -53,8 +54,10 @@ namespace ZEngine
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            // Load Content
             Global.LoadContent(Content);
 
+            // Initialize game state
             game = new Main();
         }
 

@@ -4,9 +4,11 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/Admin/Documents/GitHub/ZEngine/ZEngine/Content/Assets/Images/Giovanni.png</File>
     <File>C:/Users/Admin/Documents/GitHub/ZEngine/ZEngine/Content/Assets/Images/pixel.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>
