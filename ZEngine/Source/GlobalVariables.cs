@@ -20,6 +20,10 @@ namespace ZEngine.Source
             windowWidth = 844,
             windowHeight = 480;
 
+        // Settings
+
+        public static bool renderInactive = false;
+
         // Sprites
 
         public static Texture2D noImg, gio;

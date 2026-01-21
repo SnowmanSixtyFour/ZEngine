@@ -18,6 +18,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace ZEngine.Source.States
 {
@@ -27,17 +28,31 @@ namespace ZEngine.Source.States
         public GraphicsDevice graphicsDevice = MainGame.publicGraphicsDevice;
 
         // State variables
+        public KeyboardState keyboard, previousKeyboard;
+        public MouseState mouse, previousMouse;
         public int screenWidth, screenHeight;
 
         public State()
         {
         }
 
-        public virtual void Update(GameTime gameTime)
+        public void Update(GameTime gameTime)
         {
             // Update state variables
             screenWidth = graphicsDevice.Viewport.Width;
             screenHeight = graphicsDevice.Viewport.Height;
+
+            // Controls
+            keyboard = Keyboard.GetState();
+
+            // Override Update
+            OnUpdate(gameTime);
+
+            previousKeyboard = keyboard;
+        }
+
+        public virtual void OnUpdate(GameTime gameTime)
+        {
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -51,6 +66,26 @@ namespace ZEngine.Source.States
         /// <param name="spriteBatch">The spriteBatch used in Draw.</param>
         public virtual void OnDraw(SpriteBatch spriteBatch)
         {
+        }
+
+        // Controls
+
+        public bool KeyPress(Keys key)
+        {
+            if (keyboard.IsKeyUp(key) && previousKeyboard.IsKeyDown(key))
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        public bool KeyDown(Keys key)
+        {
+            if (keyboard.IsKeyDown(key))
+            {
+                return true;
+            }
+            else return false;
         }
     }
 }
