@@ -22,18 +22,25 @@ namespace ZEngine.Source
 
         // Settings
 
-        public static bool renderInactive = false;
+        public static bool renderInactive = true;
 
         // Sprites
 
         public static Texture2D noImg, gio;
+        public static SpriteFont arial;
 
         // Load game assets
         public static void LoadContent(ContentManager content)
         {
+            // Images
+
             Global.noImg = content.Load<Texture2D>("Assets/Images/pixel");
 
             Global.gio = content.Load<Texture2D>("Assets/Images/Giovanni");
+
+            // Fonts
+
+            Global.arial = content.Load<SpriteFont>("Assets/Fonts/Arial");
         }
     }
 }

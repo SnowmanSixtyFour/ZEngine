@@ -10,9 +10,9 @@ namespace ZEngine.Source.Graphics
 {
     internal class StaticSprite
     {
-        private Texture2D texture;
-        private Rectangle destRect;
-        private Color color;
+        protected Texture2D texture;
+        protected Rectangle destRect;
+        protected Color color;
 
         public StaticSprite(Texture2D texture, Rectangle rect, Color color)
         {

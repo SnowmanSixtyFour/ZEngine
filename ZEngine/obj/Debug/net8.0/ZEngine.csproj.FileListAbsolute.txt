@@ -34,3 +34,4 @@ C:\Users\Admin\Documents\GitHub\ZEngine\ZEngine\obj\Debug\net8.0\ZEngine.genrunt
 C:\Users\Admin\Documents\GitHub\ZEngine\ZEngine\obj\Debug\net8.0\ref\ZEngine.dll
 C:\Users\Admin\Documents\GitHub\ZEngine\ZEngine\bin\Debug\net8.0\Content\Assets\Images\pixel.xnb
 C:\Users\Admin\Documents\GitHub\ZEngine\ZEngine\bin\Debug\net8.0\Content\Assets\Images\Giovanni.xnb
+C:\Users\Admin\Documents\GitHub\ZEngine\ZEngine\bin\Debug\net8.0\Content\Assets\Fonts\Arial.xnb
