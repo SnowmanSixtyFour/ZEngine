@@ -19,14 +19,10 @@ namespace ZEngine.Source.States
         Character giovanni;
         Text debug;
 
-        public Camera cam;
-
         public Main()
         {
             giovanni = new Character(Global.gio, new Point(10, 10), new Point(48, 29), new Point(16, 29), Color.White);
             debug = new Text(Global.arial, "", new Vector2(10, 10), Color.White);
-
-            cam = new Camera(this.graphicsDevice, Global.windowWidth, Global.windowHeight);
         }
 
         public override void OnUpdate(GameTime gameTime)

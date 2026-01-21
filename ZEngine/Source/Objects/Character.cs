@@ -11,7 +11,10 @@ namespace ZEngine.Source.Objects
 {
     internal class Character
     {
+        // Public variables
         public int X, Y, Width, Height;
+
+        // Protected variables
         protected Sprite sprite;
 
         public Character(Texture2D texture, Point location, Point size, Point sheetSize, Color color)
@@ -23,20 +26,23 @@ namespace ZEngine.Source.Objects
             this.Height = size.Y;
 
             // Create Sprite
-            sprite = new Sprite(texture, // Texture
-                new Rectangle(new Point(X, Y), // Position
-                new Point(this.Width, this.Height)), // Size
-                new Rectangle(new Point(0, 0), // Animation Frame Position
-                sheetSize), // Sprite Sheet
-                color); // Color
+            sprite = new Sprite(texture,                // Texture
+                new Rectangle(new Point(X, Y),          // Position
+                new Point(this.Width, this.Height)),    // Size
+                new Rectangle(new Point(0, 0),          // Sprite Sheet Frame Position
+                sheetSize),                             // Sprite Sheet Size
+                color);                                 // Color
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            // Update Sprite Position
+            // Update
+
+            // Sprite (Position & Size)
             sprite.setDestRect(new Rectangle(new Point(X, Y), new Point(Width, Height)));
 
-            // Draw Sprite
+            // Draw
+
             sprite.Draw(spriteBatch);
         }
 

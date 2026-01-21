@@ -19,6 +19,7 @@ using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using ZEngine.Source.Objects;
 
 namespace ZEngine.Source.States
 {
@@ -31,9 +32,12 @@ namespace ZEngine.Source.States
         public KeyboardState keyboard, previousKeyboard;
         public MouseState mouse, previousMouse;
         public int screenWidth, screenHeight;
+        public Camera cam;
 
         public State()
         {
+            // Set Camera
+            cam = new Camera(this.graphicsDevice, Global.windowWidth, Global.windowHeight);
         }
 
         public void Update(GameTime gameTime)
