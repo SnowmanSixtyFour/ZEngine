@@ -22,13 +22,18 @@ namespace ZEngine.Source.States
         public Main()
         {
             giovanni = new Character(Global.gio, new Point(10, 10), new Point(48, 29), new Point(16, 29), Color.White);
-            giovanni.setSize(4);
+
+            giovanni.setSize(2); // Resize Test
+
             debug = new Text(Global.arial, "", new Vector2(10, 10), Color.White);
         }
 
         public override void OnUpdate(GameTime gameTime)
         {
-            debug.setText("X: " + giovanni.X + "\nY: " + giovanni.Y);
+            debug.setText("X: " + giovanni.X
+                + "\nY: " + giovanni.Y
+                + "\nWidth: " + giovanni.Width
+                + "\nHeight: " + giovanni.Height);
 
             // Placeholder controls
             if (KeyDown(Keys.Left))

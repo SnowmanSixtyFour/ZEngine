@@ -15,7 +15,7 @@ namespace ZEngine.Source.Objects
         public int X, Y, Width, Height;
 
         // Protected variables
-        protected int resize;
+        protected int resize = 1, defaultWidth, defaultHeight;
         protected Sprite sprite;
 
         public Character(Texture2D texture, Point location, Point size, Point sheetSize, Color color)
@@ -23,8 +23,9 @@ namespace ZEngine.Source.Objects
             // Set variables
             this.X = location.X;
             this.Y = location.Y;
-            this.Width = size.X / 3;
-            this.Height = size.Y;
+            this.defaultWidth = (size.X / 3);
+            this.defaultHeight = size.Y;
+            UpdateSize();
 
             // Create Sprite
             sprite = new Sprite(texture,                // Texture
@@ -56,6 +57,14 @@ namespace ZEngine.Source.Objects
         public void setSize(int newSize)
         {
             this.resize = newSize;
+
+            UpdateSize();
+        }
+
+        private void UpdateSize()
+        {
+            this.Width = (defaultWidth * resize);
+            this.Height = (defaultHeight * resize);
         }
     }
 }
