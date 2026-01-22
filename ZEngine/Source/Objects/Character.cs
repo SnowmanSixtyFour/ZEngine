@@ -15,6 +15,7 @@ namespace ZEngine.Source.Objects
         public int X, Y, Width, Height;
 
         // Protected variables
+        protected int resize;
         protected Sprite sprite;
 
         public Character(Texture2D texture, Point location, Point size, Point sheetSize, Color color)
@@ -39,17 +40,22 @@ namespace ZEngine.Source.Objects
             // Update
 
             // Sprite (Position & Size)
-            sprite.setDestRect(new Rectangle(new Point(X, Y), new Point(Width, Height)));
+            sprite.setDestRect(new Rectangle(new Point(X, Y), new Point(Width * resize, Height * resize)));
 
             // Draw
 
             sprite.Draw(spriteBatch);
         }
 
-        // Setters
-
         public void CreateNewAnim(String name, int frames)
         {
+        }
+
+        // Setters
+
+        public void setSize(int newSize)
+        {
+            this.resize = newSize;
         }
     }
 }
