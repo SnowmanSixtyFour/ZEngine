@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|solutionrelative:zengine\\source\\states\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\documents\\github\\zengine\\zengine\\source\\states\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|solutionrelative:zengine\\source\\states\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\documents\\github\\zengine\\zengine\\source\\graphics\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|solutionrelative:zengine\\source\\graphics\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\documents\\github\\zengine\\zengine\\source\\objects\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|solutionrelative:zengine\\source\\objects\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\documents\\github\\zengine\\zengine\\source\\graphics\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|solutionrelative:zengine\\source\\graphics\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\documents\\github\\zengine\\zengine\\source\\states\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|solutionrelative:zengine\\source\\states\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\documents\\github\\zengine\\zengine\\source\\graphics\\staticsprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\documents\\github\\zengine\\zengine\\source\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|solutionrelative:zengine\\source\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\documents\\github\\zengine\\zengine\\source\\graphics\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|solutionrelative:zengine\\source\\graphics\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75A3535D-B154-4864-9171-BBCE57CD33FA}|ZEngine\\ZEngine.csproj|c:\\users\\admin\\documents\\github\\zengine\\zengine\\source\\objects\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,13 +50,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Text.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\Source\\Graphics\\Text.cs",
               "RelativeDocumentMoniker": "ZEngine\\Source\\Graphics\\Text.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\Source\\Graphics\\Text.cs",
               "RelativeToolTip": "ZEngine\\Source\\Graphics\\Text.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-21T20:29:05.242Z"
             },
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\Source\\Objects\\Character.cs",
               "RelativeDocumentMoniker": "ZEngine\\Source\\Objects\\Character.cs",
@@ -82,12 +82,11 @@
               "RelativeToolTip": "ZEngine\\Source\\Objects\\Character.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAuwBsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T18:20:33.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-20T18:20:33.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Sprite.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\Source\\Graphics\\Sprite.cs",
               "RelativeDocumentMoniker": "ZEngine\\Source\\Graphics\\Sprite.cs",
@@ -95,12 +94,11 @@
               "RelativeToolTip": "ZEngine\\Source\\Graphics\\Sprite.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T00:31:11.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-20T00:31:11.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "StaticSprite.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\Source\\Graphics\\StaticSprite.cs",
               "RelativeDocumentMoniker": "ZEngine\\Source\\Graphics\\StaticSprite.cs",
@@ -112,16 +110,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "State.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\Source\\States\\State.cs",
               "RelativeDocumentMoniker": "ZEngine\\Source\\States\\State.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\Source\\States\\State.cs",
               "RelativeToolTip": "ZEngine\\Source\\States\\State.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAuwCIAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwCIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T00:45:25.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T00:45:25.183Z"
             },
             {
               "$type": "Document",
@@ -131,14 +128,14 @@
               "RelativeDocumentMoniker": "ZEngine\\Source\\States\\Main.cs",
               "ToolTip": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\Source\\States\\Main.cs",
               "RelativeToolTip": "ZEngine\\Source\\States\\Main.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwBsAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T00:43:31.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "MainGame.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\MainGame.cs",
               "RelativeDocumentMoniker": "ZEngine\\MainGame.cs",
@@ -150,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GlobalVariables.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\Source\\GlobalVariables.cs",
               "RelativeDocumentMoniker": "ZEngine\\Source\\GlobalVariables.cs",

@@ -25,7 +25,7 @@ namespace ZEngine.Source.States
 
             giovanni.setSize(2); // Resize Test
 
-            debug = new Text(Global.arial, "", new Vector2(10, 10), Color.White);
+            debug = new Text(Global.arial, "", new Vector2(10, 10), Color.White, 1.0f);
         }
 
         public override void OnUpdate(GameTime gameTime)
