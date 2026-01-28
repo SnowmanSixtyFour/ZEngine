@@ -18,6 +18,13 @@ namespace ZEngine.Source.Objects
         protected int resize = 1, defaultWidth, defaultHeight;
         protected Sprite sprite;
 
+        // Animation variables
+        Point sheetSize;
+        float
+            elapsed,
+            delay = 200f;
+        int frames = 0, maxFrames = 2;
+
         public Character(Texture2D texture, Point location, Point size, Point sheetSize, Color color)
         {
             // Set variables
@@ -25,6 +32,7 @@ namespace ZEngine.Source.Objects
             this.Y = location.Y;
             this.defaultWidth = (size.X / 3);
             this.defaultHeight = size.Y;
+            this.sheetSize = sheetSize;
             UpdateSize();
 
             // Create Sprite
@@ -38,18 +46,42 @@ namespace ZEngine.Source.Objects
 
         public void Draw(SpriteBatch spriteBatch)
         {
+            // Test Animation Code Start
+            elapsed += (float)MainGame.gameTime.ElapsedGameTime.TotalMilliseconds;
+
+            if (elapsed >= delay)
+            {
+                // Go back to first frame
+                if (frames >= maxFrames)
+                {
+                    frames = 0;
+                }
+                // Update frame
+                else
+                {
+                    frames++;
+                }
+
+                // Reset animation time
+                elapsed = 0;
+            }
+            // Test Animation Code End
+
             // Update
 
-            // Sprite (Position & Size)
-            sprite.setDestRect(new Rectangle(new Point(X, Y), new Point(Width * resize, Height * resize)));
+            // Sprite
+            sprite.setDestRect(new Rectangle(
+                new Point(X, Y),
+                new Point(Width * resize, Height * resize)));
+
+            // Current Frame of Sprite Sheet
+            sprite.setSourceRect(new Rectangle(
+                new Point((sheetSize.X * frames), 0),
+                new Point(sheetSize.X, sheetSize.Y)));
 
             // Draw
 
             sprite.Draw(spriteBatch);
-        }
-
-        public void CreateNewAnim(String name, int frames)
-        {
         }
 
         // Setters

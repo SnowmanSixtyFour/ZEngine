@@ -18,6 +18,7 @@ namespace ZEngine
 
         public static GraphicsDeviceManager publicGraphics;
         public static GraphicsDevice publicGraphicsDevice;
+        public static GameTime gameTime;
 
         private Main game;
 
@@ -82,6 +83,9 @@ namespace ZEngine
             
             // Update game
             game.Update(gameTime);
+
+            // Update public game time
+            MainGame.gameTime = gameTime;
 
             base.Update(gameTime);
         }

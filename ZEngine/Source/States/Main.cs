@@ -21,9 +21,9 @@ namespace ZEngine.Source.States
 
         public Main()
         {
+            // Test Character
             giovanni = new Character(Global.gio, new Point(10, 10), new Point(48, 29), new Point(16, 29), Color.White);
-
-            giovanni.setSize(2); // Resize Test
+            giovanni.setSize(2);
 
             debug = new Text(Global.arial, "", new Vector2(10, 10), Color.White, 1.0f);
         }
