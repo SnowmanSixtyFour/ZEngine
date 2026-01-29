@@ -23,7 +23,7 @@ namespace ZEngine.Source.Objects
         float
             elapsed,
             delay = 200f;
-        int frames = 0, maxFrames = 2;
+        int frame = 0, maxFrames = 2;
 
         public Character(Texture2D texture, Point location, Point size, Point sheetSize, Color color)
         {
@@ -52,14 +52,14 @@ namespace ZEngine.Source.Objects
             if (elapsed >= delay)
             {
                 // Go back to first frame
-                if (frames >= maxFrames)
+                if (frame >= maxFrames)
                 {
-                    frames = 0;
+                    frame = 0;
                 }
                 // Update frame
                 else
                 {
-                    frames++;
+                    frame++;
                 }
 
                 // Reset animation time
@@ -76,12 +76,22 @@ namespace ZEngine.Source.Objects
 
             // Current Frame of Sprite Sheet
             sprite.setSourceRect(new Rectangle(
-                new Point((sheetSize.X * frames), 0),
+                new Point((sheetSize.X * frame), 0),
                 new Point(sheetSize.X, sheetSize.Y)));
 
             // Draw
 
             sprite.Draw(spriteBatch);
+        }
+
+        // Animate
+
+        public void CreateAnimation(String name, int frames)
+        {
+        }
+
+        public void PlayAnimation()
+        {
         }
 
         // Setters
