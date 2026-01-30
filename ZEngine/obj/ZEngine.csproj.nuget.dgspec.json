@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CJMT\\Documents\\GitHub\\ZEngine\\ZEngine\\ZEngine.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\ZEngine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CJMT\\Documents\\GitHub\\ZEngine\\ZEngine\\ZEngine.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\ZEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CJMT\\Documents\\GitHub\\ZEngine\\ZEngine\\ZEngine.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\ZEngine.csproj",
         "projectName": "ZEngine",
-        "projectPath": "C:\\Users\\CJMT\\Documents\\GitHub\\ZEngine\\ZEngine\\ZEngine.csproj",
-        "packagesPath": "C:\\Users\\CJMT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CJMT\\Documents\\GitHub\\ZEngine\\ZEngine\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\ZEngine.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\ZEngine\\ZEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\CJMT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

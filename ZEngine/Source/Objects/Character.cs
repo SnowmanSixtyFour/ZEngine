@@ -23,7 +23,7 @@ namespace ZEngine.Source.Objects
         float
             elapsed,
             delay = 200f;
-        int frame = 0, maxFrames = 2;
+        int frame = 0, maxFrames;
 
         public Character(Texture2D texture, Point location, Point size, Point sheetSize, Color color)
         {
@@ -46,9 +46,6 @@ namespace ZEngine.Source.Objects
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            // WIP: PlayAnimation
-            PlayAnimation(0, 0); // Set to play no animation - placeholder!
-
             // Update
 
             // Sprite
@@ -68,11 +65,7 @@ namespace ZEngine.Source.Objects
 
         // Animate
 
-        public void CreateAnimation(String name, int frames)
-        {
-        }
-
-        private void PlayAnimation(int startFrame, int endFrame)
+        public void PlayAnimation(int startFrame, int endFrame)
         {
             // Update GameTime
             elapsed += (float)MainGame.gameTime.ElapsedGameTime.TotalMilliseconds;
@@ -93,6 +86,11 @@ namespace ZEngine.Source.Objects
                 // Reset animation time
                 elapsed = 0;
             }
+        }
+
+        public void SetFrame(int newFrame)
+        {
+            this.frame = newFrame;
         }
 
         // Setters

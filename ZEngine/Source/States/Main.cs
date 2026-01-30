@@ -22,7 +22,7 @@ namespace ZEngine.Source.States
         public Main()
         {
             // Test Character
-            giovanni = new Character(Global.gio, new Point(10, 10), new Point(48, 29), new Point(16, 29), Color.White);
+            giovanni = new Character(Global.gio, new Point(10, 200), new Point(48, 29), new Point(16, 29), Color.White);
             giovanni.setSize(2);
 
             debug = new Text(Global.arial, "", new Vector2(10, 10), Color.White, 1.0f);
@@ -51,6 +51,19 @@ namespace ZEngine.Source.States
             if (KeyDown(Keys.Down))
             {
                 giovanni.Y += 2;
+            }
+
+            // Placeholder animations
+            if (!KeyDown(Keys.Left) // Idle
+                && !KeyDown(Keys.Right)
+                && !KeyDown(Keys.Up)
+                && !KeyDown(Keys.Down))
+            {
+                giovanni.SetFrame(0);
+            }
+            else // Walking
+            {
+                giovanni.PlayAnimation(1, 2);
             }
         }
 
