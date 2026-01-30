@@ -46,26 +46,8 @@ namespace ZEngine.Source.Objects
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            // Test Animation Code Start
-            elapsed += (float)MainGame.gameTime.ElapsedGameTime.TotalMilliseconds;
-
-            if (elapsed >= delay)
-            {
-                // Go back to first frame
-                if (frame >= maxFrames)
-                {
-                    frame = 0;
-                }
-                // Update frame
-                else
-                {
-                    frame++;
-                }
-
-                // Reset animation time
-                elapsed = 0;
-            }
-            // Test Animation Code End
+            // WIP: PlayAnimation
+            PlayAnimation(0, 0); // Set to play no animation - placeholder!
 
             // Update
 
@@ -90,8 +72,27 @@ namespace ZEngine.Source.Objects
         {
         }
 
-        public void PlayAnimation()
+        private void PlayAnimation(int startFrame, int endFrame)
         {
+            // Update GameTime
+            elapsed += (float)MainGame.gameTime.ElapsedGameTime.TotalMilliseconds;
+
+            if (elapsed >= delay)
+            {
+                // Go back to first frame
+                if (frame >= endFrame)
+                {
+                    frame = startFrame;
+                }
+                // Update frame
+                else
+                {
+                    frame++;
+                }
+
+                // Reset animation time
+                elapsed = 0;
+            }
         }
 
         // Setters
