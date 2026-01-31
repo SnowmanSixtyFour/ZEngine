@@ -20,20 +20,26 @@ namespace ZEngine.Source.Objects
 
         // Animation variables
         Point sheetSize;
-        float
-            elapsed,
-            delay = 200f;
+        float elapsed = 0, delay = 200f;
         int frame = 0, maxFrames;
+
+        public List<String> animation;
+        protected List<int> startFrame, endFrame;
 
         public Character(Texture2D texture, Point location, Point size, Point sheetSize, Color color)
         {
             // Set variables
             this.X = location.X;
             this.Y = location.Y;
+
             this.defaultWidth = (size.X / 3);
             this.defaultHeight = size.Y;
             this.sheetSize = sheetSize;
             UpdateSize();
+
+            animation = new List<String>();
+            startFrame = new List<int>();
+            endFrame = new List<int>();
 
             // Create Sprite
             sprite = new Sprite(texture,                // Texture
@@ -49,12 +55,12 @@ namespace ZEngine.Source.Objects
             // Update
 
             // Sprite
-            sprite.setDestRect(new Rectangle(
+            sprite.SetDestRect(new Rectangle(
                 new Point(X, Y),
                 new Point(Width * resize, Height * resize)));
 
             // Current Frame of Sprite Sheet
-            sprite.setSourceRect(new Rectangle(
+            sprite.SetSourceRect(new Rectangle(
                 new Point((sheetSize.X * frame), 0),
                 new Point(sheetSize.X, sheetSize.Y)));
 
@@ -65,9 +71,48 @@ namespace ZEngine.Source.Objects
 
         // Animate
 
-        public void PlayAnimation(int startFrame, int endFrame)
+        public void CreateAnimation(String name, int startFrame, int endFrame)
         {
-            // Update GameTime
+            // Add Animation to Name List
+            this.animation.Add(name);
+
+            // Start and End Frames
+            this.startFrame.Add(startFrame);
+            this.endFrame.Add(endFrame);
+        }
+
+        public void PlayAnimation(String name)
+        {
+            int animNumber = -1;
+
+            // Set Animation Number
+
+            // While no current Animation selected
+            if (animNumber == -1)
+            {
+                // For All Animations
+                for (int i = 0; i < this.animation.Count; i++)
+                {
+                    // When User Input matches Animation Name
+                    if (name == this.animation[i])
+                    {
+                        animNumber = i;
+                    }
+                }
+            }
+
+            
+
+            // Play Selected Animation
+            PlayAnimation(startFrame[animNumber], endFrame[animNumber]);
+        }
+
+        // Private Play Animation
+        // This plays the start and end frames of the animation.
+        // Not to be publicly used because you only need the name to play an animation.
+        private void PlayAnimation(int startFrame, int endFrame)
+        {
+            // Update animation time using GameTime
             elapsed += (float)MainGame.gameTime.ElapsedGameTime.TotalMilliseconds;
 
             if (elapsed >= delay)
@@ -95,7 +140,7 @@ namespace ZEngine.Source.Objects
 
         // Setters
 
-        public void setSize(int newSize)
+        public void SetSize(int newSize)
         {
             this.resize = newSize;
 

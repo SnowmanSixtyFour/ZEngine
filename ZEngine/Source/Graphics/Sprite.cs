@@ -19,27 +19,27 @@ namespace ZEngine.Source.Graphics
             if (texture == null) texture = Global.noImg;
 
             // Initialize sprite
-            setTexture(texture);
-            setDestRect(destRect);
-            setSourceRect(sourceRect);
-            setColor(color);
+            SetTexture(texture);
+            SetDestRect(destRect);
+            SetSourceRect(sourceRect);
+            SetColor(color);
         }
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(getTexture(), getDestRect(), sourceRect, getColor());
+            spriteBatch.Draw(GetTexture(), GetDestRect(), sourceRect, GetColor());
         }
 
         // Getters
 
-        public Rectangle getSourceRect()
+        public Rectangle GetSourceRect()
         {
             return this.sourceRect;
         }
 
         // Setters
 
-        public void setSourceRect(Rectangle newRect)
+        public void SetSourceRect(Rectangle newRect)
         {
             this.sourceRect = newRect;
         }

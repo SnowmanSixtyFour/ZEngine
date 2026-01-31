@@ -23,19 +23,26 @@ namespace ZEngine.Source.States
         {
             // Test Character
             giovanni = new Character(Global.gio, new Point(10, 200), new Point(48, 29), new Point(16, 29), Color.White);
-            giovanni.setSize(2);
+            giovanni.SetSize(2);
+
+            // Test Create Animations
+            giovanni.CreateAnimation("idle", 0, 0);
+            giovanni.CreateAnimation("walk", 1, 2);
 
             debug = new Text(Global.arial, "", new Vector2(10, 10), Color.White, 1.0f);
         }
 
         public override void OnUpdate(GameTime gameTime)
         {
+            // Entire Main OnUpdate method is a placeholder; testing out Character and animations, Text and more
+
+            // Text
             debug.setText("X: " + giovanni.X
                 + "\nY: " + giovanni.Y
                 + "\nWidth: " + giovanni.Width
                 + "\nHeight: " + giovanni.Height);
 
-            // Placeholder controls
+            // Char Movement
             if (KeyDown(Keys.Left))
             {
                 giovanni.X -= 2;
@@ -53,17 +60,17 @@ namespace ZEngine.Source.States
                 giovanni.Y += 2;
             }
 
-            // Placeholder animations
+            // Char Animations
             if (!KeyDown(Keys.Left) // Idle
                 && !KeyDown(Keys.Right)
                 && !KeyDown(Keys.Up)
                 && !KeyDown(Keys.Down))
             {
-                giovanni.SetFrame(0);
+                giovanni.PlayAnimation("idle");
             }
             else // Walking
             {
-                giovanni.PlayAnimation(1, 2);
+                giovanni.PlayAnimation("walk");
             }
         }
 

@@ -22,7 +22,7 @@ namespace ZEngine.Source.Objects
             target = new RenderTarget2D(graphicsDevice, width, height);
         }
 
-        public void setDestRect()
+        public void SetDestRect()
         {
             var screenSize = graphicsDevice.PresentationParameters.Bounds;
 

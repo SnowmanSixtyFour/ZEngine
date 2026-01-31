@@ -20,9 +20,9 @@ namespace ZEngine.Source.Graphics
             if (texture == null) texture = Global.noImg;
 
             // Initialize sprite
-            setTexture(texture);
-            setDestRect(rect);
-            setColor(color);
+            SetTexture(texture);
+            SetDestRect(rect);
+            SetColor(color);
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -32,34 +32,34 @@ namespace ZEngine.Source.Graphics
 
         // Getters
 
-        public Texture2D getTexture()
+        public Texture2D GetTexture()
         {
             return this.texture;
         }
 
-        public Rectangle getDestRect()
+        public Rectangle GetDestRect()
         {
             return this.destRect;
         }
 
-        public Color getColor()
+        public Color GetColor()
         {
             return this.color;
         }
 
         // Setters
 
-        public void setTexture(Texture2D newTexture)
+        public void SetTexture(Texture2D newTexture)
         {
             this.texture = newTexture;
         }
 
-        public void setDestRect(Rectangle newRect)
+        public void SetDestRect(Rectangle newRect)
         {
             this.destRect = newRect;
         }
 
-        public void setColor(Color newColor)
+        public void SetColor(Color newColor)
         {
             this.color = newColor;
         }

@@ -47,7 +47,7 @@ namespace ZEngine
         private void WindowSizeChanged(object sender, EventArgs e)
         {
             // Update game camera
-            game.cam.setDestRect();
+            game.cam.SetDestRect();
         }
 
         private void ChangeWindowSize(int windowWidth, int windowHeight)
@@ -59,7 +59,7 @@ namespace ZEngine
             graphics.ApplyChanges();
 
             // Game camera
-            game.cam.setDestRect();
+            game.cam.SetDestRect();
         }
 
         protected override void LoadContent()
@@ -80,12 +80,12 @@ namespace ZEngine
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-            
-            // Update game
-            game.Update(gameTime);
 
             // Update public game time
             MainGame.gameTime = gameTime;
+
+            // Update game
+            game.Update(gameTime);
 
             base.Update(gameTime);
         }
