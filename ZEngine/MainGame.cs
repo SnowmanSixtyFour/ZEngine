@@ -1,6 +1,9 @@
 ﻿// Z Engine is owned by Snowman64 under the GNU General Public License v3.0.
 // You are allowed to use this engine for free, but credit must be given.
 
+// Special Thanks:
+// CRT Scanline Shaders (Public Domain) - Timothy Lottes
+
 using System;
 using System.Runtime.CompilerServices;
 using ZEngine.Source.States;
@@ -69,8 +72,17 @@ namespace ZEngine
             // Load Content
             Global.LoadContent(Content);
 
-            // Initialize game state
+            // Set game state
             game = new Main();
+
+            // Set CRT Shader
+            Global.crt.Parameters["brightboost"].SetValue(0.92f);
+
+            var texSize = new Vector2(Global.windowWidth, Global.windowHeight);
+            Global.crt.Parameters["textureSize"]?.SetValue(texSize);
+            Global.crt.Parameters["videoSize"]?.SetValue(texSize);
+            var outSize = new Vector2(MainGame.publicGraphics.PreferredBackBufferWidth, MainGame.publicGraphics.PreferredBackBufferHeight);
+            Global.crt.Parameters["outputSize"]?.SetValue(outSize);
 
             // Set Cam
             ChangeWindowSize(Global.windowWidth, Global.windowHeight);
@@ -94,8 +106,9 @@ namespace ZEngine
         {
             GraphicsDevice.Clear(Color.Black);
 
+            // Draw Game whether renderInactive is true, if false then only while user is tabbed in
             if (this.IsActive
-                || Global.renderInactive == true && !this.IsActive)
+                || Global.renderInactive && !this.IsActive)
             {
                 game.cam.Activate();
 
@@ -104,7 +117,8 @@ namespace ZEngine
                 BlendState.AlphaBlend,
                 SamplerState.PointClamp,
                 DepthStencilState.None,
-                RasterizerState.CullCounterClockwise);
+                RasterizerState.CullNone
+                );
 
                 // Draw Game
                 game.Draw(spriteBatch);

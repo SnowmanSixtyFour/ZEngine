@@ -53,7 +53,8 @@ namespace ZEngine.Source.Objects
                 BlendState.AlphaBlend,
                 SamplerState.PointClamp,
                 DepthStencilState.None,
-                RasterizerState.CullCounterClockwise);
+                RasterizerState.CullCounterClockwise,
+                effect: Global.shadersEnabled ? Global.crt : null);
             spriteBatch.Draw(target, destRect, Color.White);
             spriteBatch.End();
         }

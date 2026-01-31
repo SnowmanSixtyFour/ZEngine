@@ -72,6 +72,12 @@ namespace ZEngine.Source.States
             {
                 giovanni.PlayAnimation("walk");
             }
+
+            // Toggle Filter
+            if (KeyPress(Keys.Enter))
+            {
+                Global.shadersEnabled = !Global.shadersEnabled;
+            }
         }
 
         public override void OnDraw(SpriteBatch spriteBatch)

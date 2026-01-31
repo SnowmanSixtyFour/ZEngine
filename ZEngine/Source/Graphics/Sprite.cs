@@ -10,7 +10,6 @@ namespace ZEngine.Source.Graphics
 {
     internal class Sprite : StaticSprite
     {
-        protected int frames;
         protected Rectangle sourceRect;
 
         public Sprite(Texture2D texture, Rectangle destRect, Rectangle sourceRect, Color color) : base(texture, destRect, color)

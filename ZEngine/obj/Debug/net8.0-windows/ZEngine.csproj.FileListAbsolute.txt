@@ -72,3 +72,4 @@ C:\Users\CJMT\Documents\GitHub\ZEngine\ZEngine\obj\Debug\net8.0-windows\refint\Z
 C:\Users\CJMT\Documents\GitHub\ZEngine\ZEngine\obj\Debug\net8.0-windows\ZEngine.pdb
 C:\Users\CJMT\Documents\GitHub\ZEngine\ZEngine\obj\Debug\net8.0-windows\ZEngine.genruntimeconfig.cache
 C:\Users\CJMT\Documents\GitHub\ZEngine\ZEngine\obj\Debug\net8.0-windows\ref\ZEngine.dll
+C:\Users\CJMT\Documents\GitHub\ZEngine\ZEngine\bin\Debug\net8.0-windows\Content\Assets\Shaders\CRTFilter.xnb

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46f384cfcde9c5216d0c82b796a6a55f3a517d1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7ec0e9b612f7fb55cf05da6a212274e2e63da92")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

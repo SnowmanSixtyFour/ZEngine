@@ -24,10 +24,15 @@ namespace ZEngine.Source
 
         public static bool renderInactive = true;
 
+        // Graphics
+
+        public static bool shadersEnabled = false;
+
         // Sprites
 
         public static Texture2D noImg, gio;
         public static SpriteFont arial;
+        public static Effect crt;
 
         // Load game assets
         public static void LoadContent(ContentManager content)
@@ -41,6 +46,10 @@ namespace ZEngine.Source
             // Fonts
 
             Global.arial = content.Load<SpriteFont>("Assets/Fonts/Arial");
+
+            // Shaders
+
+            Global.crt = content.Load<Effect>("Assets/Shaders/CRTFilter");
         }
     }
 }

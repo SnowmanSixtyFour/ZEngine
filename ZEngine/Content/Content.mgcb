@@ -45,3 +45,9 @@
 /processorParam:TextureFormat=Color
 /build:Assets/Images/pixel.png
 
+#begin Assets/Shaders/CRTFilter.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:Assets/Shaders/CRTFilter.fx
+
