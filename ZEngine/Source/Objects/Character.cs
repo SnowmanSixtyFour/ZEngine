@@ -36,7 +36,9 @@ namespace ZEngine.Source.Objects
             this.X = location.X;
             this.Y = location.Y;
 
-            this.defaultWidth = (size.X / 3);
+            if (texture != null) this.defaultWidth = (size.X / 3);
+            else this.defaultWidth = size.X;
+
             this.defaultHeight = size.Y;
             this.sheetSize = sheetSize;
             UpdateSize();
