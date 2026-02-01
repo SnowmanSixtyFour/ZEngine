@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using ZEngine.Source.Graphics;
 
 namespace ZEngine.Source.Objects
@@ -25,6 +26,9 @@ namespace ZEngine.Source.Objects
 
         public List<String> animation;
         protected List<int> startFrame, endFrame;
+
+        // Controls
+        public KeyboardState keyboard, previousKeyboard;
 
         public Character(Texture2D texture, Point location, Point size, Point sheetSize, Color color)
         {
@@ -48,6 +52,21 @@ namespace ZEngine.Source.Objects
                 new Rectangle(new Point(0, 0),          // Sprite Sheet Frame Position
                 sheetSize),                             // Sprite Sheet Size
                 color);                                 // Color
+        }
+
+        public void Update(GameTime gameTime)
+        {
+            // Controls
+            keyboard = Keyboard.GetState();
+
+            // Override Update
+            OnUpdate(gameTime);
+
+            previousKeyboard = keyboard;
+        }
+
+        public virtual void OnUpdate(GameTime gameTime)
+        {
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -151,6 +170,26 @@ namespace ZEngine.Source.Objects
         {
             this.Width = (defaultWidth * resize);
             this.Height = (defaultHeight * resize);
+        }
+
+        // Controls
+
+        public bool KeyPress(Keys key)
+        {
+            if (keyboard.IsKeyUp(key) && previousKeyboard.IsKeyDown(key))
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        public bool KeyDown(Keys key)
+        {
+            if (keyboard.IsKeyDown(key))
+            {
+                return true;
+            }
+            else return false;
         }
     }
 }
