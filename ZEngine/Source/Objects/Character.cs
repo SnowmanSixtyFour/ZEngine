@@ -163,6 +163,11 @@ namespace ZEngine.Source.Objects
             }
         }
 
+        public void SetSprite(Texture2D newTexture)
+        {
+            this.sprite.SetTexture(newTexture);
+        }
+
         public void SetFrame(int newFrame)
         {
             this.frame = newFrame;
