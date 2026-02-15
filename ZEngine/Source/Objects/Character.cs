@@ -56,6 +56,15 @@ namespace ZEngine.Source.Objects
                 color);                                 // Color
         }
 
+        // Set bounds for Character
+        public Rectangle Bounds
+        {
+            get
+            {
+                return new Rectangle(new Point(X, Y), new Point(Width, Height));
+            }
+        }
+
         public void Update(GameTime gameTime)
         {
             // Controls
@@ -157,6 +166,14 @@ namespace ZEngine.Source.Objects
         public void SetFrame(int newFrame)
         {
             this.frame = newFrame;
+        }
+
+        // Interaction
+
+        public bool CollidesWith(Character collider)
+        {
+            // Colliding character is intersecting another character
+            return this.Bounds.Intersects(collider.Bounds);
         }
 
         // Setters
