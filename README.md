@@ -1,17 +1,22 @@
-![Banner](img/banner.png?raw=true)
-=====
+<div align="center">
+<a href="https://github.com/Z-Engine/ZEngine">
+  <img align="center" src="img/logo.png" alt="Z Engine">
+</a>
+</div>
+<br>
 <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
   <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" width="100" alt="GNU General Public License v3.0">
 </a>
 
-Z Engine is a game engine using MonoGame, giving users the base to program 2D games in the C# language.
+### Z Engine is a 2D game engine, made with [MonoGame](https://monogame.net/).
 
 # About
-I, Snowman64, started development on this engine back in January 2026 for fun. Now, I've been using it as a base for my games, and I hope you will too!
+Z Engine was originally started in January 2026 for fun.
 
-Below are a list of games made with Z Engine.
+Now, it has evolved into a full framework providing the essentials for 2D game development.
 
 ### Made with Z Engine
+Below are a list of games made with Z Engine.
 * [Between the Lines](https://github.com/SnowmanSixtyFour/BetweenTheLines)
 
 ## Special Thanks
