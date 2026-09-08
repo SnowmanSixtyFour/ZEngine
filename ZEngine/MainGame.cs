@@ -1,16 +1,18 @@
-﻿// Z Engine is owned by Snowman64 under the GNU General Public License v3.0.
+﻿// Z Engine is owned by Snowman64.
 // You are allowed to use this engine for free, but credit must be given.
 
 // Special Thanks:
 // CRT Scanline Shaders (Public Domain) - Timothy Lottes
 
-using System;
-using System.Runtime.CompilerServices;
-using ZEngine.Source.States;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using ZEngine.Source;
+using ZEngine.Source.Data.Storage;
+using ZEngine.Source.States;
 
 namespace ZEngine
 {
@@ -24,6 +26,7 @@ namespace ZEngine
         public static GameTime gameTime;
 
         private Main game;
+        public static OptionsFile options = new OptionsFile();
 
         public MainGame()
         {
@@ -42,6 +45,26 @@ namespace ZEngine
             this.Window.Title = Global.windowName;
             this.Window.AllowUserResizing = true;
             this.Window.ClientSizeChanged += WindowSizeChanged;
+
+            // Set Options
+            if (!options.Exists()) // If options do not exist
+            {
+                Debug.Print("Creating options...");
+
+                options.Save();
+
+                Debug.Print("Options created.");
+            }
+
+            Debug.Print("Loading options...");
+
+            // Load Options File
+            options.Load();
+
+            // Set Properties from Options
+            Global.SetOptions();
+
+            Debug.Print("Options loaded.");
 
             base.Initialize();
         }

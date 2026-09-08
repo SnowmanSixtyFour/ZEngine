@@ -87,9 +87,6 @@ namespace ZEngine.Source.Objects
         {
             // Update
 
-            // Sprite
-            sprite.flipped = flipped;
-
             sprite.SetDestRect(new Rectangle(
                 new Point(X, Y),
                 new Point(Width * resize, Height * resize)));

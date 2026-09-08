@@ -59,6 +59,13 @@ namespace ZEngine.Source
         public static SpriteFont arial;
         public static Effect crt;
 
+        // Set game options
+        public static void SetOptions()
+        {
+            // TODO: Initialize global variables as options
+            // Global.whatever = MainGame.options.whatever;
+        }
+
         // Load game assets
         public static void LoadContent(ContentManager content)
         {
