@@ -18,6 +18,7 @@ Now, it has evolved into a full framework providing the essentials for 2D game d
 ### Made with Z Engine
 Below are a list of games made with Z Engine.
 * [Between the Lines](https://github.com/SnowmanSixtyFour/BetweenTheLines)
+* [ESCAPEAWAY!](https://github.com/SnowmanSixtyFour/EscapeawaySource)
 
 ## Special Thanks
 Timothy Lottes - [CRT Filter (Public Domain)](https://github.com/libretro/glsl-shaders/blob/master/crt/shaders/crt-lottes.glsl)
