@@ -4,9 +4,6 @@
 </a>
 </div>
 <br>
-<a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" width="100" alt="GNU General Public License v3.0">
-</a>
 
 ### Z Engine is a 2D game engine, made with [MonoGame](https://monogame.net/).
 
@@ -24,4 +21,4 @@ Below are a list of games made with Z Engine.
 Timothy Lottes - [CRT Filter (Public Domain)](https://github.com/libretro/glsl-shaders/blob/master/crt/shaders/crt-lottes.glsl)
 
 # Copyright
-Copyright (c) 2026 Snowman64, under the [GNU General Public License v3.0](https://github.com/Z-Engine/ZEngine/blob/main/LICENSE).
+Copyright (c) 2026 Snowman64.
