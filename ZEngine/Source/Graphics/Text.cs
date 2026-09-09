@@ -10,31 +10,34 @@ namespace ZEngine.Source.Graphics
 {
     internal class Text
     {
-        protected SpriteFont font;
+        protected SpriteFont font = Global.arial;
         protected String text;
-        protected Vector2 position, origin;
-        protected Color color;
+        protected Vector2
+            position,
+            origin;
+        protected Color color = Color.White;
         protected float size = 1.0f;
+        protected bool centered = false;
 
-        /// <summary>
-        /// Text to be drawn in a SpriteBatch.
-        /// </summary>
-        /// <param name="font">The SpriteFont image file of the text.</param>
-        /// <param name="text">The text to display.</param>
-        /// <param name="position"></param>
-        /// <param name="color"></param>
-        /// <param name="size">A float that controls the size of the text. (E.g. 1.0f, 2.0f)</param>
-        public Text(SpriteFont font, String text, Vector2 position, Color color, float size)
+        public Text(SpriteFont font, String text, Vector2 position, Color color, float size = 1.0f, bool centered = false)
         {
-            // Initialize text
+            // Initialize Text
             setFont(font);
             setText(text);
             setPosition(position);
             setColor(color);
             setSize(size);
+            setCentered(centered);
+        }
 
-            // Find the center of the string
-            origin = (font.MeasureString(text) / 2);
+        public Text(String text, Vector2 position, Color color, float size = 1.0f, bool centered = false)
+        {
+            setFont(this.font);
+            setText(text);
+            setPosition(position);
+            setColor(color);
+            setSize(size);
+            setCentered(this.centered);
         }
 
         public void Draw(SpriteBatch spriteBatch)
@@ -69,6 +72,11 @@ namespace ZEngine.Source.Graphics
             return this.size;
         }
 
+        public bool getCentered()
+        {
+            return this.centered;
+        }
+
         // Setters
 
         public void setFont(SpriteFont newFont)
@@ -79,6 +87,9 @@ namespace ZEngine.Source.Graphics
         public void setText(String newText)
         {
             this.text = newText;
+
+            // Find the center of the string
+            if (centered) origin = (font.MeasureString(text) / 2);
         }
 
         public void setPosition(Vector2 newPosition)
@@ -94,6 +105,11 @@ namespace ZEngine.Source.Graphics
         public void setSize(float newSize)
         {
             this.size = newSize;
+        }
+
+        public void setCentered(bool newCentered)
+        {
+            this.centered = newCentered;
         }
     }
 }
