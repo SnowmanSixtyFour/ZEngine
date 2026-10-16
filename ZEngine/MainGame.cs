@@ -114,15 +114,17 @@ namespace ZEngine
         // Update Global Variables
         private void UpdateGlobal()
         {
+            // Get from Global
             IsMouseVisible = Global.mouseVisible;
+
+            // Set to Global
+            Global.active = this.IsActive;
         }
 
         protected override void Update(GameTime gameTime)
         {
-            /*
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
-            */
+            // Quit Game
+            if (Global.quit) Exit();
 
             // Update game variables
             UpdateGlobal();

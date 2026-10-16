@@ -17,7 +17,7 @@ namespace ZEngine.Source.Graphics
             origin;
         protected Color color = Color.White;
         protected float size = 1.0f;
-        protected bool centered = false;
+        protected bool centered;
 
         public Text(SpriteFont font, String text, Vector2 position, Color color, float size = 1.0f, bool centered = false)
         {
@@ -37,7 +37,7 @@ namespace ZEngine.Source.Graphics
             setPosition(position);
             setColor(color);
             setSize(size);
-            setCentered(this.centered);
+            setCentered(centered);
         }
 
         public void Draw(SpriteBatch spriteBatch)

@@ -8,12 +8,12 @@ using ZEngine.Source.Objects;
 
 namespace ZEngine.Source.States
 {
-    internal class LevelState : State
+    internal class Level : State
     {
         Character giovanni;
         Text debug;
 
-        public LevelState()
+        public Level()
         {
             // Test Character
             giovanni = new Character(Global.gio, new Point(10, 200), new Point(48, 29), new Point(16, 29), Color.White);

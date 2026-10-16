@@ -13,15 +13,15 @@ namespace ZEngine.Source.States
     {
         private State currentState;
 
-        private LevelState levelState;
+        private Level level;
 
         public Main()
         {
             // Set States
-            levelState = new LevelState();
+            level = new Level();
 
             // Set Current State
-            currentState = levelState;
+            currentState = level;
 
             // Set Objects
             cursor.X = 0;
@@ -47,14 +47,13 @@ namespace ZEngine.Source.States
             if (Global.pauseWhenInactive && !Global.active) Global.paused = true;
 
             // Center Mouse
-            if (!Global.paused)
+            if (!Global.paused && Global.active)
             {
-                // On Mouse Move
                 if (MouseMoved())
                 {
-                    // Update Cursor Position
-                    cursor.X += (mouse.X - screenWidth / 2);    // X
-                    cursor.Y += (mouse.Y - screenHeight / 2);   // Y
+                    // Keep Mouse Centered
+                    cursor.X += (mouse.X - screenWidth / 2);
+                    cursor.Y += (mouse.Y - screenHeight / 2);
                 }
 
                 // Cursor Bounds

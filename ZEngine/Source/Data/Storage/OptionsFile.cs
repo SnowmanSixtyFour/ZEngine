@@ -27,7 +27,6 @@ namespace ZEngine.Source.Data.Storage
             // TODO: Set Default Variables
 
             // Save File
-
             base.Save();
         }
 

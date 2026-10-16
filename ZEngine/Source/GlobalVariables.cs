@@ -24,6 +24,9 @@ namespace ZEngine.Source
 
         // Settings
 
+        // Quit Game
+        public static bool quit = false;
+
         // When Inactive
         public static bool
             renderInactive = true,
