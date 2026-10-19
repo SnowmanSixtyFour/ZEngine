@@ -16,7 +16,7 @@ Now, it has evolved into a full game engine, providing the essentials for 2D gam
 Below are a list of games made with Z Engine.
 * [Between the Lines](https://github.com/SnowmanSixtyFour/BetweenTheLines)
 * [ESCAPEAWAY!](https://github.com/SnowmanSixtyFour/EscapeawaySource)
-* [LudumRPG](https://github.com/SnowmanSixtyFour/LudumRPG) (working name)
+* [Rental-Tech Booking](https://github.com/SnowmanSixtyFour/RentalTechBooking)
 
 ## Special Thanks
 Timothy Lottes - [CRT Filter (Public Domain)](https://github.com/libretro/glsl-shaders/blob/master/crt/shaders/crt-lottes.glsl)
